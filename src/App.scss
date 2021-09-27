@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+@import 'variables';
+
+@import 'navigation';
+@import 'maincontainer';
+@import 'footer';
+@import 'overlay';
+@import 'stories';
+@import 'pricing';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    width: 1440px;
+    min-height: calc(100vh - 120px);
+    visibility: hidden;
+    overflow-x: hidden;
+}
+

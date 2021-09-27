@@ -1,0 +1,41 @@
+@import 'variables';
+
+.navigation{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 70px;
+    nav{
+        ul{
+            display: flex;
+            a{
+                text-decoration: none;
+                color: $black;
+                font-weight: 400;
+                &:hover{
+                    color: $grey;
+                }
+            }
+            li{
+                list-style: none;
+                margin-left: 50px;
+                
+            }
+        }
+    }
+    button{
+        padding: 10px;
+        color: $white;
+        background: $black;
+        outline: none;
+        border: 1px solid $black;
+        cursor: pointer;
+        &:hover{
+            background: $grey;
+            color: $black;
+            border: 1px solid $grey;
+        }
+    }
+}

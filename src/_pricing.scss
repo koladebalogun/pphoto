@@ -1,0 +1,455 @@
+@import 'variables';
+
+.pricing{
+    visibility: visible;
+    width: 1440px;
+    position: relative;
+    height: 100%;
+    .pricing-content{
+        display: flex;
+        align-items: center;
+        min-height: 50vh;
+        background-color: $black;
+        color: $white;
+        .pricing-content-inner{
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+            justify-content: center;
+            h1{
+                font-size: $large-font;
+                font-weight: 700;
+                margin-bottom: 30px;
+                letter-spacing: 5px;
+                color: $white;
+                line-height: 40px;
+                .pricing-content-header{
+                    margin: 0 100px; 
+                    text-align: justify;
+                    overflow: hidden;
+                    height: 56px;
+                    position: relative;
+                    line-height: 30px;
+                    mix-blend-mode: difference;
+                    z-index: 11;
+                    span{
+                        position: absolute;
+                    }
+                }
+            }
+            .pricing-content-text{
+                font-size: $regular;
+                color: $grey;
+                width: 65%;
+                margin-left: 100px;
+                text-align: justify;
+                word-spacing: 2px;
+
+                p{
+                }
+            }
+        }
+        .pricing-content-image{
+            height: 75vh;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .pricing-top{
+            min-height: 75vh;
+            position: absolute;
+            width: 1440px;
+            z-index: 8;
+            top: 77px;
+            left: 0px;
+            .left{
+                position: absolute;
+                height: 100%;
+                width: 41.6%;
+                background-color: $white ;
+                top: 0px;
+            }
+            .right{
+                position: absolute;
+                height: 100%;
+                width: 58.4%;
+                background-color: $white ;
+                top: 0px;
+                right: 0px;
+            }
+        }
+    }
+    .prices{
+        height: 100vh;
+        margin-top: 150px;
+        padding: 20px;
+        .toggle{
+            margin: 0 auto;
+            text-align: center;
+            
+            .switch{
+                position: relative;
+                display: inline-block;
+                width: 60px;
+                height: 34px;
+                .monthly{
+                    position: absolute;
+                    top: 10px;
+                    left: -80px;
+                }
+    
+                .yearly{
+                    position: absolute;
+                    top: 10px;
+                    right: -75px;
+                }
+                
+            }
+            
+            .switch input{
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+            .slider{
+                position: absolute;
+                cursor: pointer;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: $grey;
+                transition: 0.4s;
+                border-radius: 20px;
+                &:before{
+                    position: absolute;
+                    content: '';
+                    height: 26px;
+                    width: 26px;
+                    left: 4px;
+                    top: 4px;
+                    background-color: $black;
+                    transition: 0.4s;
+                    border-radius: 100px;
+                }
+
+            }
+            input:checked + .slider{
+                background-color: $black;
+            }
+
+            input:checked + .slider:before{
+                transform: translateX(26px);
+                background-color: $white;
+            }
+        }
+        .price-cards-inner{
+            margin-top: 100px;
+            .card1{
+                display: flex;
+                margin: 0;
+                text-align: center;
+                justify-content: center;
+                transition: 0.4s ease-in;
+                .one{
+                    background-color: $grey;
+                    height: 450px;
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 30px;
+                    h2{
+                        padding: 30px;
+                        font-weight: 700;
+                        font-size: $medium-font;
+                    }
+                    p{
+                        padding: 30px; 
+                        font-size: $regular; 
+                    }
+                    .txt{
+                        color: $darkgrey;
+                        margin: 10px 0 50px;
+                        padding: 0;
+                        font-size: $regular;
+                        
+                    }
+                    h1{
+                        padding-top: 30px;
+                        font-size: $large-font;
+                    }
+                    .black{
+                        padding: 10px;
+                        background-color: $black;
+                        color: $white;
+                        font-weight: 700;
+                        width: 90%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .two{
+                    background-color: $black;
+                    height: 500px;
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 5px;
+                    color: $darkgrey;
+                    h2{
+                        padding: 30px;
+                        font-weight: 700;
+                        font-size: $medium-font;
+                        color: $white;
+                    }
+                    p{
+                        padding: 30px; 
+                        font-size: $regular; 
+                    }
+                    .txt{
+                        color: $darkgrey;
+                        margin: 10px 0 50px;
+                        padding: 0;
+                        
+                    }
+                    h1{
+                        padding-top: 30px;
+                        font-size: $large-font;
+                        color: $white;
+                    }
+                    .white{
+                        padding: 10px;
+                        background-color: $white;
+                        color: $black;
+                        font-weight: 700;
+                        width: 90%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .three{
+                    background-color: $grey;
+                    height: 450px;
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 30px;
+                    h2{
+                        padding: 30px;
+                        font-weight: 700;
+                        font-size: $medium-font;
+                    }
+                    p{
+                        padding: 30px; 
+                        font-size: $regular; 
+                    }
+                    .txt{
+                        color: $darkgrey;
+                        margin: 10px 0 50px;
+                        padding: 0;
+                        font-size: $regular;
+                        
+                    }
+                    h1{
+                        padding-top: 30px;
+                        font-size: $large-font;
+                    }
+                    .black{
+                        padding: 10px;
+                        background-color: $black;
+                        color: $white;
+                        font-weight: 700;
+                        width: 90%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .card2{
+                display: flex;
+                margin: 0;
+                text-align: center;
+                justify-content: center;
+                transition: 0.4s ease-in;
+                
+                .four{
+                    background-color: $grey;
+                    height: 450px;
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 30px;
+                    h2{
+                        padding: 30px;
+                        font-weight: 700;
+                        font-size: $medium-font;
+                    }
+                    p{
+                        padding: 30px; 
+                        font-size: $regular; 
+                    }
+                    .txt{
+                        color: $darkgrey;
+                        margin: 10px 0 50px;
+                        padding: 0;
+                        font-size: $regular;
+                        
+                    }
+                    h1{
+                        padding-top: 30px;
+                        font-size: $large-font;
+                    }
+                    .black{
+                        padding: 10px;
+                        background-color: $black;
+                        color: $white;
+                        font-weight: 700;
+                        width: 90%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .five{
+                    background-color: $black;
+                    height: 500px;
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 5px;
+                    color: $darkgrey;
+                    h2{
+                        padding: 30px;
+                        font-weight: 700;
+                        font-size: $medium-font;
+                        color: $white;
+                    }
+                    p{
+                        padding: 30px; 
+                        font-size: $regular; 
+                    }
+                    .txt{
+                        color: $darkgrey;
+                        margin: 10px 0 50px;
+                        padding: 0;
+                        
+                    }
+                    h1{
+                        padding-top: 30px;
+                        font-size: $large-font;
+                        color: $white;
+                    }
+                    .white{
+                        padding: 10px;
+                        background-color: $white;
+                        color: $black;
+                        font-weight: 700;
+                        width: 90%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+
+                .six{
+                    background-color: $grey;
+                    height: 450px;
+                    width: 350px;
+                    text-align: center;
+                    padding: 20px;
+                    margin: 30px;
+                    h2{
+                        padding: 30px;
+                        font-weight: 700;
+                        font-size: $medium-font;
+                    }
+                    p{
+                        padding: 30px; 
+                        font-size: $regular; 
+                    }
+                    .txt{
+                        color: $darkgrey;
+                        margin: 10px 0 50px;
+                        padding: 0;
+                        font-size: $regular;
+                        
+                    }
+                    h1{
+                        padding-top: 30px;
+                        font-size: $large-font;
+                    }
+                    .black{
+                        padding: 10px;
+                        background-color: $black;
+                        color: $white;
+                        font-weight: 700;
+                        width: 90%;
+                        outline: none;
+                        border: none;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .subfooter{
+        margin-top: 100px;
+        width: 100%;
+        height: 40vh;
+        background-color: cadetblue;
+        background-image: url('./Pricing/pricingimages/dune.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .subfooter-inner{
+            display: flex;
+            padding: 50px 0px 10px 120px;
+            // position: relative;
+            color: $white;
+            h1{
+                font-size: $large-font;
+                font-weight: 700;
+                margin-bottom: 30px;
+                letter-spacing: 7px;
+                color: $white;
+                line-height: 50px;
+                .subfooter-line{
+                    margin: 0 100px; 
+                    text-align: justify;
+                    overflow: hidden;
+                    height: 56px;
+                    position: relative;
+                    line-height: 30px;
+                    span{
+                        // position: absolute;
+                    }
+                }
+            }
+            .subfooter-link{
+                a{
+                    position: absolute;
+                    right: 200px;
+                    text-decoration: none;
+                    color: $white;
+                    &:hover{
+                        color: $darkgrey;
+                        text-decoration: underline;
+                    }
+                }
+                .arrow-icon{
+                    position: absolute;
+                    right: 130px;
+                }
+                
+            }
+        }
+    }
+}
