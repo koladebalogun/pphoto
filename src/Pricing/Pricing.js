@@ -7,7 +7,6 @@ import arrow from '../images/arrow.svg';
 
 import photo from '../Pricing/pricingimages/hero.jpg'
 import Footer from "../footer/Footer";
-// import dune from '../Pricing/pricingimages/dune.jpg';
 
 
 const Pricing = () => {

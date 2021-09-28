@@ -22,6 +22,7 @@ const Navigation = () => {
             </div>
             <nav>
                 <ul>
+                    <li><Link to='/'>HOME</Link></li>
                     <Link to='/stories'><li>STORIES</li></Link>
                     <Link to='/pricing'><li>PRICING</li></Link>
                 </ul>

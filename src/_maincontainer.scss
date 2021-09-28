@@ -47,7 +47,7 @@
                     position: absolute;
                     width: 1440px;
                     z-index: 8;
-                    top: 77px;
+                    top: 75px;
                     left: 0px;
                     .overlayleft{
                         position: absolute;
@@ -59,7 +59,7 @@
                     .overlayright{
                         position: absolute;
                         height: 100%;
-                        width: 51.5%;
+                        width: 53.5%;
                         background-color: $white ;
                         top: 0px;
                         right: 0px;
@@ -157,23 +157,23 @@
                     }
                 }
                 .middle{
-                    min-height: 75vh;
+                    min-height: 74vh;
                     position: absolute;
                     width: 1440px;
                     z-index: 8;
-                    bottom: -808px;
+                    bottom: -797px;
                     left: 0px;
                     .overlay-middle-left{
                         position: absolute;
-                        height: 100%;
-                        width: 57.4%;
+                        height: 598px;
+                        width: 57.33%;
                         background-color: #E3BC9A ;
                         top: -333px;
                     }
                     .overlay-middle-right{
                         position: absolute;
-                        height: 100%;
-                        width: 42.62%;
+                        height:599px;
+                        width: 42.7%;
                         background-color: $black ;
                         top: -333px;
                         right: 0px;
@@ -253,22 +253,22 @@
                 }
 
                 .bottom{
-                    min-height: 75vh;
+                    min-height: 70vh;
                     position: absolute;
                     width: 1440px;
                     z-index: 8;
-                    bottom: -1072px;
+                    bottom: -1029px;
                     left: 0px;
                     .overlay-bottom-left{
                         position: absolute;
-                        height: 100%;
+                        height: 598px;
                         width: 42.7%;
                         background-color: $black ;
                         top: 0px;
                     }
                     .overlay-bottom-right{
                         position: absolute;
-                        height: 100%;
+                        height: 598px;
                         width: 57.5%;
                         background-color: $black ;
                         top: 0px;
@@ -535,7 +535,7 @@
                 position: absolute;
                 width: 1440px;
                 z-index: 8;
-                bottom: -1669px;
+                bottom: -1665px;
                 left: 0px;
                 .overlay1{
                     position: absolute;
