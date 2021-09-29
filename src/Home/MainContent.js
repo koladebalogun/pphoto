@@ -33,7 +33,7 @@ const MainContent = () => {
         tl.from('.line span', 1.8, {
             y:100,
             ease: 'power4.out',
-            delay:1,
+            delay:0.9,
             skewY:10,
             stagger:{
                 amount:0.3
