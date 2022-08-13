@@ -51,15 +51,15 @@
                     left: 0px;
                     .overlayleft{
                         position: absolute;
-                        height: 100%;
-                        width: 48.6%;
+                        height: 599px;
+                        width: 50.33%;
                         background-color: $white ;
                         top: 0px;
                     }
                     .overlayright{
                         position: absolute;
-                        height: 100%;
-                        width: 53.5%;
+                        height: 599px;
+                        width: 50.33%;
                         background-color: $white ;
                         top: 0px;
                         right: 0px;
@@ -113,6 +113,8 @@
             
         }
     }
+
+
     .second-content{
         display: flex;
         text-align: center;
@@ -165,17 +167,17 @@
                     left: 0px;
                     .overlay-middle-left{
                         position: absolute;
-                        height: 599px;
-                        width: 826px;
+                        height: 563px;
+                        width: 53.99%;
                         background-color:#F2D2BD;
-                        top: -333px;
+                        bottom: 345px;
                     }
                     .overlay-middle-right{
                         position: absolute;
-                        height:599px;
-                        width: 614px;
+                        height:563px;
+                        width: 46.10%;
                         background-color: $black ;
-                        top: -333px;
+                        bottom: 345px;
                         right: 0px;
                     }
                 }
@@ -219,6 +221,9 @@
             
         }
     }
+
+
+
     .third-content{
         width: 1440px;
         .third-content-inner{
@@ -261,17 +266,17 @@
                     left: 0px;
                     .overlay-bottom-left{
                         position: absolute;
-                        height: 599px;
-                        width: 615px;
+                        height: 563px;
+                        width: 46.10%;
                         background-color: $black ;
-                        top: 0px;
+                        bottom: 15px;
                     }
                     .overlay-bottom-right{
                         position: absolute;
-                        height: 599px;
-                        width: 826px;
+                        height: 563px;
+                        width: 53.99%;
                         background-color: $black ;
-                        top: 0px;
+                        bottom: 15px;
                         right: 0px;
                     }
                 }
@@ -539,33 +544,33 @@
                 left: 0px;
                 .overlay1{
                     position: absolute;
-                    height: 510px;
+                    height: 500px;
                     width: 25%;
                     background-color: $black ;
-                    top: 0px; 
+                    bottom: 151px; 
                 }
                 .overlay2{
                     position: absolute;
-                    height: 510px;
+                    height: 500px;
                     width: 25%;
                     background-color: $black ;
-                    top: 0px;
+                    bottom: 151px;
                     left: 360px;  
                 }
                 .overlay3{
                     position: absolute;
-                    height: 510px;
+                    height: 500px;
                     width: 25%;
                     background-color: $black ;
-                    top: 0px;
+                    bottom: 151px;
                     right: 360px; 
                 }
                 .overlay4{
                     position: absolute;
-                    height: 510px;
+                    height: 500px;
                     width: 25%;
                     background-color: $black ;
-                    top: 0px;
+                    bottom: 151px;
                     right: 0px; 
                 }
             }

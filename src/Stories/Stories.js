@@ -53,30 +53,6 @@ const Stories = () => {
             }
         })
 
-        gsap.to('.overlay1, .overlay2, .overlay3, .overlay4, .overlay5, .overlay6, .overlay7, .overlay8', 1.6, {
-            height:0,
-            ease: 'expo.Out',
-            stagger:0.4,
-            delay:0.3,
-            scrollTrigger:{
-                trigger: '.grid-overlay',
-                start:'top 10%',
-                end : 'bottom 60%',
-                toggleActions: 'restart none none reverse'
-            }
-        })
-        gsap.to('.overlay9, .overlay10, .overlay11, .overlay12, .overlay13, .overlay14, .overlay15, .overlay16', 1.6, {
-            height:0,
-            ease: 'ease.out',
-            stagger:0.4,
-            delay:0.3,
-            scrollTrigger:{
-                trigger: '.overlay5',
-                start:'60% 10%',
-                end : 'bottom 60%',
-                toggleActions: 'restart none none reverse'
-            }
-        })
     })
     return (
         <div className="stories" >
@@ -281,24 +257,7 @@ const Stories = () => {
                     </div>
                 {/* </div> */}
             </div>
-            <div className="grid-overlay">
-                <div className="overlay1"></div>
-                <div className="overlay2"></div>
-                <div className="overlay3"></div>
-                <div className="overlay4"></div>
-                <div className="overlay5"></div>
-                <div className="overlay6"></div>
-                <div className="overlay7"></div>
-                <div className="overlay8"></div>
-                <div className="overlay9"></div>
-                <div className="overlay10"></div>
-                <div className="overlay11"></div>
-                <div className="overlay12"></div>
-                <div className="overlay13"></div>
-                <div className="overlay14"></div>
-                <div className="overlay15"></div>
-                <div className="overlay16"></div>
-            </div>
+            
             <div className="stories-footer">
                 <Footer/>
             </div>
